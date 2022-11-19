@@ -14,9 +14,9 @@
 
 // Tomas point: everytime it is about to reverse but nth FIRST of numbers in array
 
-const array = [11,14,12,13];
+//const array = [11,14,12,13];
 
-function getLength(arr, i) {
+const getLength = (arr, i) => {
   let modifiedArr = arr;
   let buffer = 0;
   let values = [];
@@ -37,7 +37,7 @@ function getLength(arr, i) {
 }
 
 
-const reverse = (arr) => {
+export const reverse = (arr) => {
   let result = 0;
   for(let i = 0; i < arr.length; i++) {
     console.log(getLength(arr, i));
